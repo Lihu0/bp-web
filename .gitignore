@@ -1,0 +1,6 @@
+# scss
+.sass-cache/
+*.css.map
+*.scss.map
+#vscode
+.vscode/
