@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בול פגיעה - מחשב מנחש</title>
+    <link rel="icon" href="./favicon.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/num_user.min.css">
+</head>
+
+<body>
+    <div class="all_site text-center" id="main">
+        <h1 class="display-1">בול פגיעה - מחשב מנחש</h1>
+        <div id="bp_btns">
+            <div>
+                <p>
+                    בול
+                </p>
+                <div>
+                    <button onclick="onclick_num_bool(0);">0</button>
+                    <button onclick="onclick_num_bool(1);">1</button>
+                    <button onclick="onclick_num_bool(2);">2</button>
+                    <button onclick="onclick_num_bool(3);">3</button>
+                    <button onclick="onclick_num_bool(4);">4</button>
+                    <span id="show_bool">0</span>
+                </div>
+            </div>
+            <div>
+                <p>
+                    פגיעה
+                </p>
+                <div>
+                    <button onclick="onclick_num_pgia(0);">0</button>
+                    <button onclick="onclick_num_pgia(1);">1</button>
+                    <button onclick="onclick_num_pgia(2);">2</button>
+                    <button onclick="onclick_num_pgia(3);">3</button>
+                    <button onclick="onclick_num_pgia(4);">4</button>
+                    <span id="show_pgia">0</span>
+                </div>
+            </div>
+            <div>
+                <button id="enter_btn" onclick="onclick_enter()">אישור</button>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ניחוש</th>
+                    <th>בולים</th>
+                    <th>פגיעות</th>
+                    <th>ניסיון</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+    <script src="./js/rndnum.min.js"></script>
+    <script src="./js/calcbp.min.js"></script>
+    <script src="./js/main_num_user.js"></script>
+    <script src="./js/onclick_num_user.js"></script>
+    <noscript>
+        <div class="text-center">בדוק את הגדרות הדפדפן</div>
+    </noscript>
+</body>
+
+</html>

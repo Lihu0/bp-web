@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בול פגיעה - עזרה</title>
+    <link rel="icon" href="./favicon.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="./css/help.css">
+</head>
+
+<body>
+    <div class="all_site text-center">
+        <button type="button" class="btn btn-info btn-floating" id="btn-back-to-top" title="up">
+            <i class="fa fa-arrow-up icon"></i>
+        </button>
+        <nav>
+            <a href="./">חזור לדף הראשי</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./num_comp.html">בול פגיעה אתה מנחש</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./num_user.html">בול פגיעה מחשב מנחש</a>
+        </nav>
+        <div class="movingShadow" height="130px">
+            <div id="div-title">
+                <h1 class="display-1" id="title">בול פגיעה - עזרה</h1>
+                <div class="btn-group">
+                    <button onclick="stop_animation()" id="stop_animation" class="btn btn-primary">עצור אנימציה</button>
+                <button onclick="stop_shadow()" class="btn btn-success" id="disable_shadow">בטל צל</button>
+                </div>
+            </div>
+        </div>
+        <noscript>
+            <div class="text-center">בדוק את הגדרות הדפדפן</div>
+        </noscript>
+        <br>
+        <p>
+            באתר הזה קימים שני משחקים
+        </p>
+        <ul>
+            <li class="list-group-item">
+                <a href="./num_user.html">אחד מהם הוא משחק שאתה בוחר מספר והמחשב מנחש אותו</a>
+                <br>
+                <br>
+            </li>
+            <li class="list-group-item">
+                <a href="./num_comp.html">השני הוא משחק שהמחשב מגריל מספר ואתה מנחש אותו</a>
+            </li>
+        </ul>
+        <h2 class="display-2">מהם בול ופגיעה</h2>
+        <p>
+            בול הוא מצב שבו יש ספרה זהה שנמצאת באותו מקום
+        </p>
+        <p>
+            למשל מספר הבולים בין 1234 ל 1567 הוא 1
+        </p>
+        <p>
+            פגיעה היא מצב שבו יש שתי ספרה זהה שלא נמצאות באותו מקום
+        </p>
+        למשל מספר הפגיעות בין 7890 ל 9012 הוא 2
+        <h2 class="display-2">מתי מספרים חוקיים</h2>
+        <p>
+            * המספרים לא מתחילים ב 0 למשל המספר 0123 לא חוקי
+        </p>
+        <p>
+            * למספר אין ספרות שוות למשל המספר 1123 לא חוקי
+        </p>
+        <h2 class="display-2">אז איך משחקים</h2>
+        <br>
+        <h3 class="display-3">כשאתה מנחש</h3>
+        <br>
+        <br>
+        <figure>
+            <img src="./imgs/how_to_comp.webp" alt="בעזרת המקשים תוכל להזין מספר">
+            <figcaption>* יש חצים כי להוסיף ולהוריד 1 מהמספר</figcaption>
+        </figure>
+        <figure>
+            <img src="./imgs/how_to_num_comp_2.webp" alt="בטבלה תוכל לראות את הניחושים שלך" width="70%"
+                class="table-img">
+            <figcaption>* בטבלה תוכל לראות את הניחושים שלך</figcaption>
+        </figure>
+
+    </div> 
+    
+
+    <script src="./js/scroll_up.min.js"></script>
+    <script src="./js/onclick_help.js"></script>
+</body>
+
+</html>
